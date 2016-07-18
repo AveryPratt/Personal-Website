@@ -1,0 +1,87 @@
+﻿body{
+    background-image: url(graphpaper.jpg);
+    background-attachment: fixed;
+}
+
+header{
+    height: 150px;
+    margin: 0px 50px;
+}
+
+.headerLink {
+    font-size: 20px;
+    border-left: 2px solid #ff0000;
+    padding: 0px 20px;
+}
+
+.headerDiv{
+    margin-top: 120px;
+    text-align: center;
+}
+
+footer{
+    margin: 20px 50px;
+}
+
+#content{
+    padding: 100px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background: #ffffff;
+    margin: 0px 50px;
+}
+
+#profilepic{
+    height: 200px;
+    border: 10px solid #777777;
+    box-shadow: #777777 0px 0px 20px 0px;
+    margin-bottom: 20px;
+}
+
+.titleDiv{
+    clear: both;
+    border-top: 1px solid #777777;
+}
+
+.contentDiv{
+    box-shadow: #777777 0px 0px 20px 0px;
+    padding: 25px;
+    margin: 75px;
+}
+
+.title{
+    float: left;
+}
+
+.projectimg{
+    height: 200px;
+    float: left;
+}
+
+.project{
+    font-size: 20px;
+}
+
+a{
+    color: #990099;
+    text-decoration: none !important;
+}
+
+a:visited{
+    color: #777777;
+}
+
+a:hover, .headerLink:hover{
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.upButton{
+    margin: 10px;
+    font-size: 30px;
+    float: right;
+}
+
+.upButton:visited{
+    color: #990099;
+}
