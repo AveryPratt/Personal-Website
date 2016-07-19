@@ -18,23 +18,6 @@ header{
     border-bottom: 3px solid #000000;
 }
 
-.headerLink{
-    background-color: #999999;
-    color: #bb00bb;
-    font-size: 20px;
-    border: 2px solid #000000;
-    padding: 0px 20px;
-    margin-right: -6px;
-}
-
-.headerLink:visited{
-    color: #dddddd;
-}
-
-.footerLink{
-    color: #ff00ff;
-}
-
 .headerDiv{
     margin-top: -62px;
     text-align: center;
@@ -50,12 +33,13 @@ footer{
     border-bottom: 3px solid #000000;
     background-image: url(graphpaper.jpg);
     background-attachment: fixed;
+    background-size: cover;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 #profilepic{
-    height: 200px;
+    height: 300px;
     border: 10px solid #551100;
     box-shadow: #777777 0px 0px 20px 0px;
     margin-bottom: 20px;
@@ -73,8 +57,9 @@ footer{
 }
 
 .title{
+    color: #771100;
     margin-top: -100px;
-    padding-top: 100px;
+    padding-top: 120px;
     float: left;
 }
 
@@ -85,30 +70,6 @@ footer{
 
 .project{
     font-size: 20px;
-}
-
-a{
-    color: #990099;
-    text-decoration: none !important;
-}
-
-a:visited{
-    color: #bbbbbb;
-}
-
-a:hover{
-    color: #ff0000 !important;
-    text-decoration: none;
-}
-
-.upButton{
-    margin: 10px;
-    font-size: 30px;
-    float: right;
-}
-
-.upButton:visited{
-    color: #990099;
 }
 
 #resume{
@@ -128,4 +89,46 @@ span2{
 #headerTitle{
     font-size: 48px;
     margin: 50px 0px;
+}
+
+/*Links*/
+a{
+    color: #990099;
+    text-decoration: none !important;
+}
+
+a:visited{
+    color: #999999;
+}
+
+a:hover{
+    color: #ff0000 !important;
+    text-decoration: none;
+}
+
+.upButton{
+    margin: 10px;
+    font-size: 30px;
+    float: right;
+}
+
+.upButton:visited{
+    color: #990099;
+}
+
+.headerLink{
+    background-color: #999999;
+    color: #bb00bb;
+    font-size: 20px;
+    border: 2px solid #000000;
+    padding: 0px 20px;
+    margin-right: -6px;
+}
+
+.headerLink:visited{
+    color: #dddddd;
+}
+
+.footerLink{
+    color: #ff00ff;
 }
