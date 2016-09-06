@@ -7,6 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Avery Pratt</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=.5">
+
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -125,10 +127,23 @@
             <footer>
                 <p>
                     Created by Avery Pratt, © 2016. View my work on <a class="footerLink" href="https://github.com/AveryPratt" target="_blank">Github</a>.<br />
-                    Built using <a class="footerLink" href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.<br />
                 </p>
             </footer>
         </div>
     </form>
+    <script>
+        $(".headerLink").click(function (event) {
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            //go to destination
+            $('html,body').animate({ scrollTop: dest }, 1000, 'swing');
+        });
+    </script>
 </body>
 </html>
