@@ -26,12 +26,13 @@
     <form id="form1">
         <div id="wrapper">
             <header>
+                <div id="pageTop"></div>
                 <h1 id="headerTitle"><strong><span1>AVERY</span1> <span2>PRATT</span2></strong></h1>
                 <div class="headerDiv">
-                    <a class="headerLink" href="#profileAnchor">Profile</a>
-                    <a class="headerLink" href="#projectsAnchor">Projects</a>
-                    <a class="headerLink" href="#resumeAnchor">Resume</a>
-                    <a class="headerLink" href="#contactAnchor">Contact</a>
+                    <a class="headerLink" href="#profileAnchor" onclick="smoothScroll">Profile</a>
+                    <a class="headerLink" href="#projectsAnchor" onclick="smoothScroll">Projects</a>
+                    <a class="headerLink" href="#resumeAnchor" onclick="smoothScroll">Resume</a>
+                    <a class="headerLink" href="#contactAnchor" onclick="smoothScroll">Contact</a>
                     <a class="headerLink" href="https://github.com/AveryPratt" target="_blank">Github</a>
                 </div>
             </header>
@@ -42,7 +43,7 @@
                 <div class="itemDiv">
                     <div class="titleDiv">
                         <h3 id="profileAnchor" class="title"><strong>Profile</strong></h3>
-                        <a class="upButton" href="Index.html">▲</a>
+                        <a class="upButton" href="#content" onclick="smoothScroll">▲</a>
                     </div>
                     <div class="contentDiv">
                         Hi, I am Avery.<br /><br />
@@ -60,7 +61,7 @@
                 <div class="itemDiv">
                     <div class="titleDiv">
                         <h3 id="projectsAnchor" class="title"><strong>Projects</strong></h3>
-                        <a class="upButton" href="Index.html">▲</a>
+                        <a class="upButton" href="#content" onclick="smoothScroll">▲</a>
                     </div>
                     <div class="contentDiv">
                         <a href="rocketcalculator.azurewebsites.net" target="_blank">
@@ -106,7 +107,7 @@
                 <div class="itemDiv">
                     <div class="titleDiv">
                         <h3 id="resumeAnchor" class="title"><strong>Resume</strong></h3>
-                        <a class="upButton" href="Index.html">▲</a>
+                        <a class="upButton" href="#content" onclick="smoothScroll">▲</a>
                     </div>
                     <div class="contentDiv">
                         <img id="resume" src="resume.png" />
@@ -115,7 +116,7 @@
                 <div class="itemDiv">
                     <div class="titleDiv">
                         <h3 id="contactAnchor" class="title"><strong>Contact</strong></h3>
-                        <a class="upButton" href="Index.html">▲</a>
+                        <a class="upButton" href="#content" onclick="smoothScroll">▲</a>
                     </div>
                     <div class="contentDiv">
                         Name: Avery Pratt<br />
@@ -131,8 +132,9 @@
             </footer>
         </div>
     </form>
-    <script>
-        $(".headerLink").click(function (event) {
+    <script src="Scripts/jquery-3.1.0.js"></script>
+    <script id="smoothScroll">
+        $(".headerLink, .upButton").click(function (event) {
             event.preventDefault();
             //calculate destination place
             var dest = 0;
@@ -142,7 +144,7 @@
                 dest = $(this.hash).offset().top;
             }
             //go to destination
-            $('html,body').animate({ scrollTop: dest }, 1000, 'swing');
+            $('html, body').animate({ scrollTop: dest }, 1000, 'swing');
         });
     </script>
 </body>
