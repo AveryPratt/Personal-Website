@@ -29,11 +29,12 @@
                 <div id="pageTop"></div>
                 <h1 id="headerTitle"><strong><span1>AVERY</span1> <span2>PRATT</span2></strong></h1>
                 <div class="headerDiv">
-                    <a class="headerLink" href="#profileAnchor" onclick="smoothScroll">Profile</a>
-                    <a class="headerLink" href="#projectsAnchor" onclick="smoothScroll">Projects</a>
-                    <a class="headerLink" href="#resumeAnchor" onclick="smoothScroll">Resume</a>
-                    <a class="headerLink" href="#contactAnchor" onclick="smoothScroll">Contact</a>
+                    <a class="headerLinkScroll" href="#profileAnchor" onclick="smoothScroll">Profile</a>
+                    <a class="headerLinkScroll" href="#projectsAnchor" onclick="smoothScroll">Projects</a>
+                    <a class="headerLinkScroll" href="#resumeAnchor" onclick="smoothScroll">Resume</a>
+                    <a class="headerLinkScroll" href="#contactAnchor" onclick="smoothScroll">Contact</a>
                     <a class="headerLink" href="https://github.com/AveryPratt" target="_blank">Github</a>
+                    <a class="headerLink" href="Blog.html">Blog</a>
                 </div>
             </header>
             <div id="content">
@@ -134,7 +135,7 @@
     </form>
     <script src="Scripts/jquery-3.1.0.js"></script>
     <script id="smoothScroll">
-        $(".headerLink, .upButton").click(function (event) {
+        $(".headerLinkScroll, .upButton").click(function (event) {
             event.preventDefault();
             //calculate destination place
             var dest = 0;
