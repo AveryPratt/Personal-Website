@@ -125,7 +125,20 @@ a:hover{
     margin-right: -6px;
 }
 
+.headerLinkScroll{
+    background-color: #999999;
+    color: #bb00bb;
+    font-size: 20px;
+    border: 2px solid #000000;
+    padding: 0px 20px;
+    margin-right: -6px;
+}
+
 .headerLink:visited{
+    color: #dddddd;
+}
+
+.headerLinkScroll:visited{
     color: #dddddd;
 }
 
